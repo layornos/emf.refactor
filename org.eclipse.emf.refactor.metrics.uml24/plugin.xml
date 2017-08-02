@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<plugin>
+
+<extension point="org.eclipse.emf.refactor.metrics">
+<metric 
+	id="org.eclipse.emf.refactor.metrics.uml24.nacp" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.NACP" 
+	metric_context="Package" 
+	metric_description="Number of abstract Classes within the Package" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="NACP">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.tncp" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.TNCP" 
+	metric_context="Package" 
+	metric_description="Total number of Classes within the Package" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="TNCP">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.ca" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.Ca" 
+	metric_context="Package" 
+	metric_description="Afferent coupling: Number of classes in other packages which depend on classes within the package" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="Ca">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.ce" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.Ce" 
+	metric_context="Package" 
+	metric_description="Efferent coupling: Number of classes within the package which depend on classes in other packages" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="Ce">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.dnh" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.DNH" 
+	metric_context="Package" 
+	metric_description="Depth in the nesting hierarchy" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="DNH">
+</metric>
+</extension>
+
+<extension point="org.eclipse.emf.refactor.metrics">
+<metric id="org.eclipse.emf.refactor.metrics.uml24.neatc" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.NEATC" 
+	metric_context="Class" 
+	metric_description="Number of equal attributes with other classes" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="NEATC">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.nsupc2" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.NSUPC2" 
+	metric_context="Class" 
+	metric_description="Total number of ancestors of the class" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="NSUPC2">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.maxditc" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.MaxDITC" 
+	metric_context="Class" 
+	metric_description="Depth of Inheritance Tree (maximum due to multiple inheritance)" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="MaxDITC">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.nassc" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.NASSC" 
+	metric_context="Class" 
+	metric_description="Number of associations with itself" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="NASSC">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.cbc" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.CBC" 
+	metric_context="Class" 
+	metric_description="Number of owned attributes and associations with class type (coupling between classes)" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="CBC">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.hagg" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.HAgg" 
+	metric_context="Class" 
+	metric_description="Length of the longest path to the leaves in the aggregation hierarchy" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="HAgg">
+</metric>
+</extension>
+
+<extension point="org.eclipse.emf.refactor.metrics">
+<metric id="org.eclipse.emf.refactor.metrics.uml24.neipo" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlop.NEIPO" 
+	metric_context="Operation" 
+	metric_description="Number of equal input-parameters in sibling operations" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="NEIPO">
+</metric>
+</extension>
+
+<extension point="org.eclipse.emf.refactor.metrics">
+	<metric 
+		id="org.eclipse.emf.refactor.metrics.uml24.nih" 
+		metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.NIH" 
+		metric_context="Model" 
+		metric_description="Total number of inheritance hierarchies in the model" 
+		metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+		metric_name="NIH">
+	</metric>
+</extension>
+</plugin>

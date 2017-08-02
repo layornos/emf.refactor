@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<plugin>
+
+<extension point="org.eclipse.emf.refactor.metrics">
+	<metric 
+		id="org.eclipse.emf.refactor.metrics.uml24.nniacp" 
+		metric_calculate_class="org.eclipse.emf.refactor.metrics.umlpack.NNIACP" 
+		metric_context="Package" 
+		metric_description="Number of non-inherited abstract classes within the package" 
+		metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+		metric_name="NNIACP">
+	</metric>
+	<metric 
+		id="org.eclipse.emf.refactor.metrics.uml24.niaep" 
+		metric_calculate_class="org.eclipse.emf.refactor.metrics.umlpack.NIAEP" 
+		metric_context="Package" 
+		metric_description="Number of internal navigable owned association end types within the package" 
+		metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+		metric_name="NIAEP">
+	</metric>
+	<metric 
+		id="org.eclipse.emf.refactor.metrics.uml24.nigp" 
+		metric_calculate_class="org.eclipse.emf.refactor.metrics.umlpack.NIGP" 
+		metric_context="Package" 
+		metric_description="Number of internal generalization relationships within the package" 
+		metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+		metric_name="NIGP">
+	</metric>
+	<metric 
+		id="org.eclipse.emf.refactor.metrics.uml24.neacp" 
+		metric_calculate_class="org.eclipse.emf.refactor.metrics.umlpack.NEACP" 
+		metric_context="Package" 
+		metric_description="Number of owned attributes in external classes typed by classes within the package" 
+		metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+		metric_name="NEACP">
+	</metric>
+	<metric 
+		id="org.eclipse.emf.refactor.metrics.uml24.neaecp" 
+		metric_calculate_class="org.eclipse.emf.refactor.metrics.umlpack.NEAECP" 
+		metric_context="Package" 
+		metric_description="Number of external navigable owned association ends typed by classes within the package" 
+		metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+		metric_name="NEAECP">
+	</metric>
+	<metric 
+		id="org.eclipse.emf.refactor.metrics.uml24.naetop" 
+		metric_calculate_class="org.eclipse.emf.refactor.metrics.umlpack.NAETOP" 
+		metric_context="Package" 
+		metric_description="Number of internal navigable owned association ends typed by classes in other packages" 
+		metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+		metric_name="NAETOP">
+	</metric>
+	<metric 
+		id="org.eclipse.emf.refactor.metrics.uml24.netap" 
+		metric_calculate_class="org.eclipse.emf.refactor.metrics.umlpack.NETAP" 
+		metric_context="Package" 
+		metric_description="Number of attributes within the package typed by classes in other packages" 
+		metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+		metric_name="NETAP">
+	</metric>
+	<metric 
+		id="org.eclipse.emf.refactor.metrics.uml24.nesubp" 
+		metric_calculate_class="org.eclipse.emf.refactor.metrics.umlpack.NESUBP" 
+		metric_context="Package" 
+		metric_description="Number of classes in other packages which are direct subclasses of classes within the package" 
+		metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+		metric_name="NESUBP">
+	</metric>
+	<metric 
+		id="org.eclipse.emf.refactor.metrics.uml24.nesupp" 
+		metric_calculate_class="org.eclipse.emf.refactor.metrics.umlpack.NESUPP" 
+		metric_context="Package" 
+		metric_description="Number of classes within the package which are direct subclasses of classes in other packages" 
+		metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+		metric_name="NESUPP">
+	</metric>
+</extension>
+
+<extension point="org.eclipse.emf.refactor.metrics">
+	<metric 
+		id="org.eclipse.emf.refactor.metrics.uml24.nasoc" 
+		metric_calculate_class="org.eclipse.emf.refactor.metrics.umlpack.NASOC" 
+		metric_context="Class" 
+		metric_description="Number of associations with other classes" 
+		metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+		metric_name="NASOC">
+	</metric>
+	<metric 
+		id="org.eclipse.emf.refactor.metrics.uml24.icparc" 
+		metric_calculate_class="org.eclipse.emf.refactor.metrics.umlpack.ICParC" 
+		metric_context="Class" 
+		metric_description="Number of parameters within the class having another class as type" 
+		metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+		metric_name="ICParC">
+	</metric>
+	<metric 
+		id="org.eclipse.emf.refactor.metrics.uml24.icpari" 
+		metric_calculate_class="org.eclipse.emf.refactor.metrics.umlpack.ICParI" 
+		metric_context="Class" 
+		metric_description="Number of parameters within the class having an interface as type" 
+		metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+		metric_name="ICParI">
+	</metric>
+</extension>
+
+</plugin>

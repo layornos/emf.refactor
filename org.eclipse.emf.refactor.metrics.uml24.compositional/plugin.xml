@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.emf.refactor.metrics">
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.a"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.A"
+            metric_context="Package"
+            metric_description="Quota of abstract classes within the package (Abstractness)"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="A">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.tc"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.TC"
+            metric_context="Package"
+            metric_description="Total coupling: afferent coupling + efferent coupling"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="TC">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.i"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.I"
+            metric_context="Package"
+            metric_description="Ratio between efferent coupling and total coupling (instability)"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="I">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.ahf"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.AHF"
+            metric_context="Package"
+            metric_description="Attribute hiding factor"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="AHF">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.aif"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.AIF"
+            metric_context="Package"
+            metric_description="Attribute inheritance factor"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="AIF">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.ohf"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.OHF"
+            metric_context="Package"
+            metric_description="Operation hiding factor"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="OHF">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.oif"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.OIF"
+            metric_context="Package"
+            metric_description="Operation inheritance factor"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="OIF">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.navcp"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.NAVCP"
+            metric_context="Package"
+            metric_description="Ratio between number of associations and number of classes within the package"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="NAVCP">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.ncap"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.NCAP"
+            metric_context="Package"
+            metric_description="Number of classes and associations within the package"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="NCAP">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.ntctp"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.NTCTP"
+            metric_context="Package"
+            metric_description="Number of times classes within the package are used as attribute and association end types from outside the package"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="NTCTP">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.nttcp"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.NTTCP"
+            metric_context="Package"
+            metric_description="Number of times classes within the package use classes in other packages as attribute and association end type"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="NTTCP">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.nitrp"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.NITRP"
+            metric_context="Package"
+            metric_description="Number of internal class type relationships within the package"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="NITRP">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.nicrp"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.NICRP"
+            metric_context="Package"
+            metric_description="Number of internal relationships between classes within the package"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="NICRP">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.h"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.H"
+            metric_context="Package"
+            metric_description="Relational cohesion"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="H">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.ndcop"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.NDCOP"
+            metric_context="Package"
+            metric_description="Number of dependencies of classes in other packages on classes within the package"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="NDCOP">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.ndocp"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.NDOCP"
+            metric_context="Package"
+            metric_description="Number of dependencies of classes within the package on classes in other packages"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="NDOCP">
+      </metric>
+   </extension>
+   
+   <extension
+         point="org.eclipse.emf.refactor.metrics">
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.nacm"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.NACM"
+            metric_context="Model"
+            metric_description="Number of all ancestors of all classes in the model"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="NACM">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.ana"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.ANA"
+            metric_context="Model"
+            metric_description="Average number of ancestors of all classes in the model"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="ANA">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.maxdit"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.MaxDIT"
+            metric_context="Model"
+            metric_description="Maximum of all depths of inheritance trees"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="MaxDIT">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.maxhagg"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.MaxHAgg"
+            metric_context="Model"
+            metric_description="Maximum of aggregation trees"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="MaxHAgg">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.gevsc"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.GEvsC"
+            metric_context="Model"
+            metric_description="Ratio between number of inheritance relations and number of classes in the model"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="GEvsC">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.atvsc"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.ATvsC"
+            metric_context="Model"
+            metric_description="Ratio between number of owned attributes and number of classes in the model"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="ATvsC">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.opvsc"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.OPvsC"
+            metric_context="Model"
+            metric_description="Ratio between number of owned operations and number of classes in the model"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="OPvsC">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.agvsc"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.AGvsC"
+            metric_context="Model"
+            metric_description="Ratio between number of aggregations and number of classes in the model"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="AGvsC">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.asvsc"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.ASvsC"
+            metric_context="Model"
+            metric_description="Ratio between number of associations and number of classes in the model"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="ASvsC">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.ntdm"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.NTDM"
+            metric_context="Model"
+            metric_description="Number of class type dependencies in the model"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="NTDM">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.ndepm"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.NDEPM"
+            metric_context="Model"
+            metric_description="Number of class dependencies in the model"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="NDEPM">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.depvsc"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.DEPvsC"
+            metric_context="Model"
+            metric_description="Ratio between number of class dependencies and number of classes in the model"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="DEPvsC">
+      </metric>
+   </extension>
+   
+   <extension
+         point="org.eclipse.emf.refactor.metrics">
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.nfeac" 
+			metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.NFEAC" 
+			metric_context="Class" 
+			metric_description="Number of owned features within the class (attributes and operations)" 
+			metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+			metric_name="NFEAC">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.nasc" 
+			metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.NASC" 
+			metric_context="Class" 
+			metric_description="Number of association with other classes or itself" 
+			metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+			metric_name="NASC">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.nppac" 
+			metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.NPPAC" 
+			metric_context="Class" 
+			metric_description="Number of private and protected owned attributes" 
+			metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+			metric_name="NPPAC">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.nai" 
+			metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.NAI" 
+			metric_context="Class" 
+			metric_description="Number of owned attributes visible to subclasses (public and protected)" 
+			metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+			metric_name="NAI">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.dam" 
+			metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.DAM" 
+			metric_context="Class" 
+			metric_description="Ratio between number of private and protected owned attributes and number of owned attributes" 
+			metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+			metric_name="DAM">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.icpar" 
+			metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.ICPar" 
+			metric_context="Class" 
+			metric_description="Number of parameters within the class having another class or interface as type" 
+			metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+			metric_name="ICPar">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.apoc" 
+			metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.APOC" 
+			metric_context="Class" 
+			metric_description="Average number of parameters in all owned operations within the class" 
+			metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+			metric_name="APOC">
+      </metric>
+   </extension>
+
+</plugin>

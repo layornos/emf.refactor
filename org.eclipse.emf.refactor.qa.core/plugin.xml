@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.propertyPages">
+      <page
+            class="org.eclipse.emf.refactor.qa.core.QAPage"
+            id="org.eclipse.emf.refactor.propertypage"
+            name="EMF Quality Assurance">
+      </page>
+   </extension>
+   
+  <extension
+         id="org.eclipse.emf.refactor.qa.menu"
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="true"
+            locationURI="popup:org.eclipse.ui.popup.any?after=additions">
+         <menu
+               id="org.eclipse.emf.refactor.runtime.menu"
+               label="EMF Quality Assurance (use existing techniques)">
+         </menu>
+         <menu
+               id="org.eclipse.emf.refactor.generator.menu"
+               label="EMF Quality Assurance (define new techniques)">
+         </menu>
+      </menuContribution>
+   </extension>
+   
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="org.eclipse.emf.refactor.view.category"
+            name="EMF Quality Assurance">
+      </category>
+   </extension>
+   
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.refactor.newwizards.category"
+            name="EMF Quality Assurance">
+      </category>
+   </extension>
+</plugin>

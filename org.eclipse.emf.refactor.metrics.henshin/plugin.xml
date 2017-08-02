@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <wizard
+            category="org.eclipse.emf.refactor.newwizards.category"
+            class="org.eclipse.emf.refactor.metrics.henshin.ui.NewMetricWizardHenshin"
+            icon="icons/metric.PNG"
+            id="org.eclipse.emf.refactor.metrics.newwizard"
+            name="Metric (specified in Henshin)">
+      </wizard>
+   </extension>
+   <extension
+         id="org.eclipse.emf.refactor.qa.menu"
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="true"
+            locationURI="popup:org.eclipse.ui.popup.any?after=additions">
+         <menu
+               id="org.eclipse.emf.refactor.generator.menu"
+               label="EMF Quality Assurance (define new techniques)">
+            <command
+                  commandId="org.eclipse.emf.refactor.metrics.henshin.generateNewMetricHenshinCommand"
+                  icon="icons/metric.PNG"
+                  label="Generate New Metric (specified in Henshin)"
+                  style="push">
+               <visibleWhen
+                     checkEnabled="true">
+                  <iterate
+                        ifEmpty="false">
+                     <instanceof
+                           value="org.eclipse.emf.ecore.EObject">
+                     </instanceof>
+                  </iterate>
+               </visibleWhen>
+            </command>
+         </menu>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            id="org.eclipse.emf.refactor.metrics.henshin.generateNewMetricHenshinCommand"
+            name="GenerateNewMetricHenshinCommand">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="org.eclipse.emf.refactor.metrics.henshin.handler.GenerateNewMetricHenshinCommandHandler"
+            commandId="org.eclipse.emf.refactor.metrics.henshin.generateNewMetricHenshinCommand">
+      </handler>
+   </extension>
+</plugin>

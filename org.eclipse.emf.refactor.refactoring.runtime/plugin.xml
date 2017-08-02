@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension-point id="org.eclipse.emf.refactor.inputpagebutton" name="InputPageButton" schema="schema/org.eclipse.emf.refactor.smellstatistics.exsd"/>
+   
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="popup:org.eclipse.ui.popup.any">
+         <menu
+               label="EMF Model Refactorings">
+            <dynamic
+                  class="org.eclipse.emf.refactor.refactoring.runtime.ui.ApplicationMenu"
+                  id="org.eclipse.emf.refactor.runtime.dynamicmenu">
+            </dynamic>
+         </menu>
+      </menuContribution>
+   </extension>
+   
+   <extension
+         point="org.eclipse.ltk.ui.refactoring.changePreviewViewers">
+      <changePreviewViewer
+            class="org.eclipse.emf.refactor.refactoring.runtime.ltk.ui.RefactoringPreviewViewer"
+            id="org.eclipse.emf.refactor.runtime.refactoringpreviewviewer">
+         <enablement>
+            <instanceof
+                  value="org.eclipse.emf.refactor.refactoring.runtime.ltk.change.RefactoringChange">
+            </instanceof></enablement>
+      </changePreviewViewer>
+   </extension>   
+
+</plugin>
