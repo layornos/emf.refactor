@@ -3,6 +3,7 @@
   <rm:locator pattern="^org\.eclipse\.emf\.refactor(\..+)?" searchPathRef="emf.refactor.git"/>
   <rm:locator pattern="^org\.eclipse\.emf\.henshin(\..+)?" searchPathRef="henshin.p2"/>
   <rm:locator pattern="^org\.eclipse(\..+)?" searchPathRef="oxygen.p2"/>
+  <rm:locator pattern="^org(\..+)?" searchPathRef="oxygen.p2"/>
   <rm:searchPath name="emf.refactor.git">
     <rm:provider componentTypes="osgi.bundle,eclipse.feature,buckminster" readerType="git">
       <rm:property key="git.remote.uri" value="https://github.com/Hu3bl/emf.refactor.git"/>
