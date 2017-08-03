@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rm:rmap xmlns:bc="http://www.eclipse.org/buckminster/Common-1.0" xmlns:rm="http://www.eclipse.org/buckminster/RMap-1.0">
-  <rm:property key="git.clone.dir" value="${user.home}/git"/>
-  <rm:property key="emf.refactor.clone" value="emf.refactor"/>
   <rm:locator pattern="^org\.eclipse\.emf\.refactor(\..+)?" searchPathRef="emf.refactor.git"/>
   <rm:locator pattern="^org\.eclipse\.emf\.henshin(\..+)?" searchPathRef="henshin.p2"/>
   <rm:locator pattern="^org\.eclipse(\..+)?" searchPathRef="oxygen.p2"/>
@@ -9,11 +7,10 @@
     <rm:provider componentTypes="osgi.bundle,eclipse.feature,buckminster" readerType="git">
       <rm:property key="git.remote.uri" value="https://github.com/Hu3bl/emf.refactor.git"/>
       <rm:property key="git.auto.fetch" value="true"/>
-      <rm:uri format="{0}/{1},{2}">
-        <bc:propertyRef key="git.clone.dir"/>
-        <bc:propertyRef key="emf.refactor.clone"/>
-        <bc:propertyRef key="buckminster.component"/>
-      </rm:uri>
+      <rm:uri format="{0}/GIT,{1}">
+          <bc:propertyRef key="workspace.root" />
+          <bc:propertyRef key="buckminster.component" />
+        </rm:uri>
     </rm:provider>
   </rm:searchPath>
   <rm:searchPath name="oxygen.p2">
