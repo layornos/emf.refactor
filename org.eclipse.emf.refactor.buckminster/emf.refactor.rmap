@@ -9,7 +9,7 @@
   <rm:locator searchPathRef="orbit"/>
   <rm:searchPath name="emf.refactor.local">
     <rm:provider componentTypes="osgi.bundle,eclipse.feature,buckminster" readerType="local">
-      <rm:uri format="{0}/EMFRefactor,{1}">
+      <rm:uri format="{0}/EMFRefactor/{1}">
         <bc:propertyRef key="workspace.root"/>
         <bc:propertyRef key="buckminster.component"/>
       </rm:uri>
